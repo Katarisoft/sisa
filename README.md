@@ -86,6 +86,7 @@ Leer estado de un pin, cambiando tipo=a (análogo), podremos obtener la lectura 
 http://localhost:8000/api/?pin=8&accion=0&tipo=d&tablero=1
 
 Devuelve
+
     {"1":{"8":false}} En caso de ser digital
 
     {"1":{"0":0.035}} En caso de ser análogo
@@ -115,9 +116,9 @@ Leer estado todos pins, separandolo por tablero en un diccionario
 
 http://localhsot:8000/api/?estad=1&modo=1&tipo=d
 
-    {"1":{"8":true,"10":false}} En caso de pins digitales
+    {"1":{"8":true,"10":false},"3":{"8":true, "10":false}} En caso de pins digitales
 
-    {"1":{"0":0.0085,"1":0.0434}} En caso de pins análogos
+    {"1":{"0":0.0085,"1":0.0434}, "3":{"0":0.0485,"1":0.0001}} En caso de pins análogos
 
 Donde:
 
